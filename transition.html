@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition Property</title>
+    <link rel="stylesheet" href="photos/logo.png" />
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 2px solid tomato;
+        background-color: palevioletred;
+        transition: 3s all ease;
+      }
+      .box:hover {
+        transform: rotate(45deg) scale(2);
+        /* transform: scale(2); */
+        /* width: 400px;
+        height: 400px;
+        background-color: aquamarine; */
+        /* transition: 3s;
+        transition: all;
+        transition: ease; */
+        transition: 3s all ease;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        Transform : Change the Shape and this is one kind of style property name
+      </li>
+      <li>
+        Translate : It is a value of transform style rule, This means you move
+        either x,y-axis or in both axis
+      </li>
+      <li>
+        Transition : How long it will take to do the change of the shape or the
+        color
+      </li>
+    </ul>
+    <div class="container">
+      <div class="box">Box-1</div>
+      <div class="box">Box-2</div>
+      <div class="box">Box-3</div>
+    </div>
+  </body>
+</html>
