@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variable</title>
+    <link rel="icon" type="image/x-icon" href="photos/logo.png" />
+    <style>
+      :root {
+        --primary-color: steelblue;
+        --secoundary-color: blue;
+        --third-color: red;
+      }
+      h3 {
+        color: var(--primary-color);
+      }
+      h4 {
+        background-color: steelblue;
+      }
+      .box {
+        border: 2px solid var(--third-color);
+      }
+      .container {
+        margin-top: 20px;
+        width: 600px;
+        height: 400px;
+        display: grid;
+        grid-template-columns: 200px calc(100% - 220px);
+        /* background-color: aquamarine; */
+        gap: 20px;
+      }
+      .sidebar {
+        background-color: aqua;
+        /* border: 2px solid black; */
+      }
+      .main-content {
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>here you will know about the CSS Variable property</h3>
+    <h4>Some May call it a custom Property</h4>
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quaerat
+        saepe quisquam est molestiae? Numquam unde consequuntur repudiandae
+        iusto, sapiente facilis accusamus eligendi omnis et totam ipsa
+        distinctio odit? Nesciunt! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Qui cum debitis, architecto modi minus aperiam beatae
+        alias totam sunt expedita! Repudiandae consectetur cum esse eos
+        necessitatibus, quam voluptate omnis ullam? Sequi temporibus adipisci
+        vero illum ad eum perspiciatis fugit. Reiciendis pariatur, nisi quidem
+        incidunt repellendus culpa cumque nostrum assumenda, esse distinctio
+        fuga quas natus ad quis aperiam! Blanditiis, praesentium modi? Aliquid,
+        sequi assumenda. Ea, eos dolorum repudiandae sequi harum cum, dolores
+        facere ipsa obcaecati in distinctio similique accusamus delectus
+        perspiciatis placeat. Praesentium tenetur, earum enim itaque nisi
+        commodi tempora neque.
+      </p>
+    </div>
+    <div class="container">
+      <div class="sidebar"></div>
+      <div class="main-content">main-content</div>
+    </div>
+  </body>
+</html>
